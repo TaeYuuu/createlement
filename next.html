@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Be Alright</title>
+   <style type="text/css">
+      *{margin: 0; padding: 0;}
+      a:hover{color:hotpink;}
+      body { background: red; height: 2000px;}
+
+      #hmm{width: 500px; height: 500px; position: absolute; top:180px; left: 600px; overflow: hidden; border-radius: 50%; transition-duration: 0.5s; border: 1px ;
+         animation-name: one; animation-duration: 2s;
+         animation-iteration-count: infinite;  cursor: pointer;
+          z-index: 5;}
+      #hmm:hover{border-radius: 0%; width: 500px; height: 1000px; border-radius: 50%; color: black; font-size: 1.5em; background-color: red; border: 0px; }   
+
+      #letter{color:white; font-size: 4em;font-weight: bold; animation : some 2s infinite}
+
+      #gatsby {height:360px; position: relative; top:550px; left:-20px;
+          transform:translate(-50%,-50%) rotateZ(0); opacity: 0.4; }
+
+      #gatsbyy {height:360px; position: relative; top:550px; left:895px;transform:translate(-50%,-50%) rotateZ(0); opacity: 0.4; }
+      #gatsbyy:hover{cursor: pointer;}
+
+       #ggoodd {width: 1100px; position: absolute; top:200px; left:1000px;transform:translate(-50%,-50%) rotateZ(0); opacity: 0.4; z-index: 1; animation-name: pp; animation-duration: 3s;  animation-iteration-count: infinite; z-index: 1;}
+
+       #party {width: 900px; position: absolute; top:1170px; left:1230px;transform:translate(-50%,-50%) rotateZ(0); opacity: 0.4; z-index: 1; animation-name: pp; animation-duration: 3s;  animation-iteration-count: infinite; cursor: pointer;}
+
+       #guy {width: 800px; position: absolute; top:1520px; left:950px;transform:translate(-50%,-50%) rotateZ(0); opacity: 0.4; z-index: 1;}
+
+       #text{width:700px; height: 600px; position: absolute; top: 130px; left: 100px; font-weight: bold; font-size:9em; color: black; animation : bbb 3s infinite; z-index: 3;}
+       #text:hover{color: white; font-size: 11em; font-style: italic; cursor: pointer;}
+
+       #text2{width:1500px; height: 400px; position: absolute; top: 1130px; left: 100px; font-weight: bold; font-size:9em; color: black; animation : bbb 3s infinite; z-index: 7;}
+       #text2:hover{color: white; font-size: 11em; font-style: italic; cursor: pointer;}
+
+       #square {width: 200px; height: 50px; position: absolute;  left: 1150px; font-size: 1.7em; font-weight: bold; animation: drop 5s  forwards infinite ;  animation-delay: 10s; opacity: 0; z-index: 5; background: yellow;}
+
+       #text3{width: 1200px; height: 50px; position: absolute; top: 50px; left: 200px; font-weight: lighter; font-size:2em; line-height: 1.6; overflow: hidden; transition-duration: 0.5s; z-index: 2; background: yellow;}
+      #text3:hover{width: 250px; height: 2000px; color: black; font-size: 1.4em; background-color: none; animation-name: ppp; animation-duration: 1s; animation-iteration-count: infinite; }
+
+      #text4{width: 1200px; height: 50px; position: absolute; top: 850px; left: 1000px; font-weight: lighter; font-size:2em; line-height: 1.6; overflow: hidden; transition-duration: 0.5s; z-index: 2; background: yellow;}
+      #text4:hover{width: 200px; height: 2000px; color: black; font-size: 1.5em; background-color: none; animation-name: ppp; animation-duration: 1s; animation-iteration-count: infinite; }
+      #dica{width: 0%; position: absolute; left:100px; top: 700px; z-index: 8;}
+      #dica2{width: 0%; position: absolute; left:180px; top: 800px; z-index: 8;}
+
+        @keyframes pp {
+           0% {opacity: 0.5;}
+           25% {opacity: 0.3;}
+           30%  {opacity: 0.5;}
+           50%  {opacity: 0.3;}
+           100% { opacity: 0.5;}
+       }
+
+       @keyframes ppp {
+           0% {opacity: 0.5;}
+           25% {opacity: 0.3;}
+           30%  {opacity: 0.5;}
+           50%  {opacity: 0.3;}
+           100% { opacity: 0.5;}
+       }
+
+        @keyframes bbb {
+           0% {left: 50px; margin-left: 0px; opacity: 1;}
+           25% {opacity: 1;}
+           50% {left: 30px; opacity: 0;}
+           75% {left: 20px; opacity: 1;}
+           100% {left: 50px; opacity: 1;}
+       }
+           
+          
+
+      @keyframes one{
+         0% {margin-top: 50px; opacity: 0; transform: rotate(90deg);}
+         30% {margin-top: 100px; opacity: 1; transform: rotate(0deg);}
+         70% {opacity: 1;}
+         100% {margin-top: 120px; opacity: 1; transform: rotate(0deg);}
+
+       }
+
+      @keyframes some{
+         from{transform: rotateZ(0deg);}
+         to{transform: rotateZ(360deg);}
+
+      }
+
+      @keyframes drop{
+         0% {margin-top: 50px; opacity: 0; transform: rotate(90deg);}
+         30% {margin-top: 100px; opacity: 1; transform: rotate(0deg);}
+         70% {opacity: 0.2; }
+         100% {margin-top: 120px; opacity: 0; transform: rotate(0deg);}
+      }
+
+      
+
+
+      </style>
+</head>
+<body>
+
+   <div id="hmm">
+      <img src="hmm.gif">
+      <p id="letter">A Good Night</p>
+   </div>
+   <img src="ggoodd.jpg" id="ggoodd">
+   <img src="gatsby.jpg" id="gatsby">
+   <img src="gatsbyy.jpg" id="gatsbyy">
+   <img src="party2.jpg" id="party">
+   <img src="good.gif" id="dica">
+   <img src="ggoodd.gif" id="dica2">
+   <img src="guy.jpg" id="guy">
+   <div id="text">Everything's gonna be alright</div>
+
+   <a href="index.html"><div id="text2">I know it's gonna be a good night</div></a>
+
+   <div id= "square"></div>
+
+   <div id="text3">Maybe it's the music or the red stain on your lips
+      I'm wondering when the right time is to go in for a kiss
+      But I'm thinking past that lover, I'm ready to meet your momma
+      If I'm being honest, I'm being honest<br><br><br><br>
+
+      I can't think when you're looking like that
+      Can't breathe when you're moving like that
+      Tell me when you're gonna do me like that, like that
+      I wish you knew what I'm thinking right now
+      I don't know if I can say it out loud
+      I don't know if I can say it out loud</div>
+
+      <div id="text4">Maybe it's the music or the red stain on your lips
+      I'm wondering when the right time is to go in for a kiss
+      But I'm thinking past that lover, I'm ready to meet your momma
+      If I'm being honest, I'm being honest<br><br><br><br>
+
+      I can't think when you're looking like that
+      Can't breathe when you're moving like that
+      Tell me when you're gonna do me like that, like that
+      I wish you knew what I'm thinking right now
+      I don't know if I can say it out loud
+      I don't know if I can say it out loud</div>
+
+
+
+
+<audio autoplay loop >
+      <source src="night.mp3" type="audio/mpeg" >
+   </audio>
+
+
+
+   <script type="text/javascript">
+      text. onclick = function(){
+      var text = "Tell me when you're gonna do me like that, like that I wish you knew what I'm thinking right now I don't know if I can say it out loud I don't know if I can say it out loud But everything's gonna be alright I think I just met my wife I know it's gonna be a good night I think I just met my wife" ;
+
+      var newText = text. split(" ");     
+      for(var i=0; i<newText.length; i++){
+         var a = document.getElementById("square");
+         var b = a.cloneNode(true);
+         b.innerHTML = newText[i];
+         b.className = "square"
+         //b.id="a"+i;
+         //b.style.left = 30*i + "px";
+         b.style.top = 25*i + "px";
+         //b.style.width = "500px";
+         b.style.animationDelay = i*0.2 + "s";
+         b.onclick= function(){
+            var d = document.getElementById(this.id);
+            console.log(d.innerHTML);
+            name2.innerHTML = d.innerHTML;
+            document.body.appendChild(d);
+
+         }
+        document.body.appendChild(b);  
+         }
+         text.style.animationPlayState = "running";        
+      
+      }
+
+
+      var toggle = "off"
+      gatsbyy.onclick = function(){
+         if(toggle == "off"){
+            toggle = "on";            
+            dica.style.width = "500px";
+            
+         }else{
+            toggle = "off";
+
+            dica.style.width = "0%";
+            dica.style.height = "0%";
+            
+         }
+      
+      }
+
+
+      var toggle = "off"
+      party.onclick = function(){
+         if(toggle == "off"){
+            toggle = "on";
+            dica2.style.width = "500px";
+            
+         }else{
+            toggle = "off";
+
+            dica2.style.width = "0%";
+            dica2.style.height = "0%";
+            
+         }
+      
+      }
+
+
+      
+
+   </script>
+
+</body>
+</html>
